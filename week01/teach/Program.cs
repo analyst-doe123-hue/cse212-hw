@@ -1,18 +1,38 @@
-﻿Console.WriteLine("\n======================\nDivisors\n======================");
-Divisors.Run();
+﻿using System;
 
-Console.WriteLine("\n======================\nArray Selector\n======================");
-ArraySelector.Run();
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("\n======================");
+        Console.WriteLine("Divisors");
+        Console.WriteLine("======================");
+        Divisors.Run();
 
-// Uncomment when you are ready to run this
-// Console.WriteLine("\n======================\nAlgorithms\n======================");
-// Algorithms.Run();
+        Console.WriteLine("\n======================");
+        Console.WriteLine("Array Selector");
+        Console.WriteLine("======================");
+        ArraySelector.Run();
 
+        // Uncomment when you are ready to run Algorithms
+       
+        Console.WriteLine("\n======================");
+        Console.WriteLine("Algorithms");
+        Console.WriteLine("======================");
+        Algorithms.Run();
+        
 
+        // Uncomment to compare with provided solutions
+        
+        Console.WriteLine("\n======================");
+        Console.WriteLine("Divisors Solution");
+        Console.WriteLine("======================");
+        DivisorsSolution.Run();
 
-// Uncomment and run as you get to the solution part
-// Console.WriteLine("\n======================\nDivisors Solution\n======================");
-// DivisorsSolution.Run();
-//
-// Console.WriteLine("\n======================\nArray Selector Solution\n======================");
-// ArraySelectorSolution.Run();
+        Console.WriteLine("\n======================");
+        Console.WriteLine("Array Selector Solution");
+        Console.WriteLine("======================");
+        ArraySelectorSolution.Run();
+        
+    }
+}
