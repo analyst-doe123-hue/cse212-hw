@@ -11,7 +11,15 @@ public class TakingTurnsQueueTests
     // Scenario: Create a queue with the following people and turns: Bob (2), Tim (5), Sue (3) and
     // run until the queue is empty
     // Expected Result: Bob, Tim, Sue, Bob, Tim, Sue, Tim, Sue, Tim, Tim
-    // Defect(s) Found: 
+    // Defect(s) Found:
+    
+     
+    // My view on the tests 
+    // Scenario: Create a queue with Bob (2), Tim (5), Sue (3) and run until empty
+    // Expected Result: Bob, Tim, Sue, Bob, Tim, Sue, Tim, Sue, Tim, Tim
+    // Defect(s) Found:
+    // Earlier implementation failed to correctly decrement turns and re-enqueue
+    // players with remaining turns, causing incorrect order and premature removal.
     public void TestTakingTurnsQueue_FiniteRepetition()
     {
         var bob = new Person("Bob", 2);
